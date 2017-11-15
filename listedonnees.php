@@ -1,7 +1,8 @@
 <?php   
+include "bdd.php";// inclusion du fichier a lire
 requete($bd,$req);    
 ?>
-
+<!--  creation d'un tableu vide-->
 <table class="">
 <caption>donnees de relevés botaniques</caption>
 <tr>
@@ -14,7 +15,7 @@ requete($bd,$req);
    
 </tr>
 <tr>
-
+<!--  affectation des valeurs contenu dans la BDD-->
 <? while($row = $req->fetch()) { ?>
         <td><? echo $row['']; ?></td>
         <td><? echo $row['']; ?></td>
@@ -38,7 +39,7 @@ requete($bd,$req);
 				'; ?>
 				</td> 
 </tr>
-
+<!--  commandes a verifier-->
 <? }   
 $req->closeCursor();   
 ?>
