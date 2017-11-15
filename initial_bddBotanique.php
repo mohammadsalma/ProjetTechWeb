@@ -3,12 +3,30 @@
 // ainsi les données de login
 include "bdd.php";
 // Pour se connecter à la base de données
-connexionbd();
+try {
+    connexionbd();
+    echo " Connexion réussie! <br>";
+    }
+    catch (Exception $e) {
+        echo " Votre login ou votre mot de passe n'est pas correcte! <br>";
+    }
 
 // Pour la creation de table
-creation_table();
-
+try {
+    creation_table();
+    echo " La table a été créée <br>";
+}
+    catch (Exception $e) {
+        echo " La table n'a pas été créée! <br>";
+        
+    }
 //Pour l'insertion des données d'exemples
-insertion_exemples();
-
+try {
+    insertion_exemples();
+    echo " Les données d'exemple ont été ajoutées <br>";
+}
+    catch (Exception $e) {
+        
+    echo " Les données d'exemple n'ont pas été ajoutées! <br>";
+    }
 ?>
