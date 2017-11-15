@@ -18,3 +18,5 @@ include"entete.html"
 		
 	</body>
 include "pied.html"
+?>
+	
