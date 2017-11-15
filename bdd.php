@@ -6,8 +6,8 @@ function connexionbd() {
 
 	// A MODIFIER : spécifiez votre login et votre mot de passe ici
 	$host = "venus";
-	$username = "";
-	$password = "";
+	$username = "msalma";
+	$password = "1984mhsthr";
 	$dbname = $username;
 
 	// chaîne de connexion pour PDO (ne pas modifier)
