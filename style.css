@@ -31,8 +31,12 @@ nav#menu {
 	padding: 5px;
 }
 
+.element_menu li a{
+	color:#437d1c;
+}
+
 .element_menu li a:hover {
-	color:teal;
+	color:#000;
 }
 
 div#bienvenue {
