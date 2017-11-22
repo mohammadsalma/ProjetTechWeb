@@ -21,9 +21,9 @@
 		<form action="main.html" method="post">
 
 		<p>
-			<label><b>Username</b></label>
+			<label>Username</label>
 			<input type="text" placeholder="Enter Username" name="usename" required>
-			<label>password:</label>
+			<label>password :</label>
 			<input type="password" name="password" />
 			<input type="submit" value="Valider" />
 		</p>
