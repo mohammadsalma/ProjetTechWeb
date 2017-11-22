@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>Projet 2017 - Techno du Web</title>
-	</head>
-
-	<body>
-
 <!-- entete -->	
-<? include("entete.php"); ?>
+<?php include("entete.php"); ?>
 
 <!-- menu -->
-<? include("menu.php"); ?>
+<?php include("menu.php"); ?>
 
 <!-- corps -->
 	<div id="corps">
@@ -39,8 +30,4 @@
 	
 <!-- pied de page -->
 
-<? include("pied.php"); ?>
-
-	</body>
-
-</html>
+<?php include("pied.php"); ?>
