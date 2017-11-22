@@ -1,3 +1,51 @@
-body {
-	background-color: ##fff2e6;	
+body { 
+	background: #fff; /* For browsers that do not support gradients */
+  	/*background: -webkit-linear-gradient(top bottom, #b9d7a4, #fff); /* For Safari 5.1 to 6.0 */
+  	/*background: -o-linear-gradient(top bottom, #b9d7a4, #fff); /* For Opera 11.1 to 12.0 */
+  	/*background: -moz-linear-gradient(top bottom, #b9d7a4, #fff); /* For Firefox 3.6 to 15 */
+  	/*background: linear-gradient(to bottom, #b9d7a4, #fff); /* Standard syntax */
+  	font-family: Arial;
+}
+
+header#entete {
+	background-color: ;
+	padding:;
+}
+
+footer#pied-de-page {
+	background-color:;
+	padding:;
+	font-style:italic;
+}
+
+#pied-de-page label {
+	font-weight: bold; 
+}
+
+nav#menu {
+	text-align: center;
+}
+
+.element_menu li {
+	display:inline-block;
+	padding: 5px;
+}
+
+.element_menu li a:hover {
+	color:teal;
+}
+
+div#bienvenue {
+	color: #437d1c;
+	text-align: justify;
+	width:50%;
+}
+
+div#login label {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+div#corps {
+
 }
