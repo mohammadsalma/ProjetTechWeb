@@ -1,9 +1,9 @@
 <?php
 include"entete.html"
-	<body>
+	echo"<body>
 
 		
-	</body>
+	</body>"
 include "pied.html"
 ?>
 	
