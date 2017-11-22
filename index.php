@@ -11,18 +11,18 @@
 	<div id="bienvenue">
 		<h1>Bienvenue sur notre application</h1>
 
-		<p>Cette application web va vous permettre de consulter des relevés botaniques. 
+		<p>Cette application web va vous permettre de consulter gratuitement et rapidement des relevés botaniques. 
 			Connectez-vous pour ajouter ou supprimer des relevés.</p>
 	</div>
 	<br>
 	<div id="login">
-		<p>Veuillez vous identifier :</p>
+		<p>Pensez à vous identifier :</p>
 
 		<form action="main.html" method="post">
 
 		<p>
 			<label>Username</label>
-			<input type="text" placeholder="Enter Username" name="usename" required>
+			<input type="text" placeholder="Identifiant" name="username" required>
 			<label>password :</label>
 			<input type="password" name="password" />
 			<input type="submit" value="Valider" />
@@ -33,9 +33,6 @@
 	<div id="corps">
 		<center>
 			[corps de la page]<br>
-			TTTTTTTTTTTTTTTTTT<br>
-			TTTTTTTTTTTTTTTTTT<br>
-			TTTTTTTTTTTTTTTTTT<br>
 		</center>
 	</div>
 	<br>
