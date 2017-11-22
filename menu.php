@@ -1,13 +1,10 @@
 <nav id="menu">
-	<div class="menu">
+	<div class="element_menu">
 		<h3>Navigation</h3>
 		<ul>
-			<li><a href="page1.html">Lien</a></li>
-			
-			<li><a href="page2.html">Lien2</a></li>
-			
-			<li><a href="page3.html">Lien3</a></li>
-			
-			</ul>
+			<li><a href="listedonnees.php">Consulter la base de données</a></li>
+			<li><a href="#">Lien 2</a></li>
+			<li><a href="#">Lien 3</a></li>	
+		</ul>
 	</div>
 </nav>
