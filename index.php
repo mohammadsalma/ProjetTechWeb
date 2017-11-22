@@ -1,18 +1,20 @@
 <!-- entete -->	
 <?php include("entete.php"); ?>
 
+<hr>
+
 <!-- menu -->
 <?php include("menu.php"); ?>
 
 <!-- corps -->
-	<div id="corps">
-		<h1>Bienvenue</h1>
+	<br>
+	<div id="bienvenue">
+		<h1>Bienvenue sur notre application</h1>
 
-		<p>
-			Voilà le rôle du site.
-		</p>
+		<p>Cette application web va vous permettre de consulter des relevés botaniques. 
+			Connectez-vous pour ajouter ou supprimer des relevés.</p>
 	</div>
-
+	<br>
 	<div id="login">
 		<p>Veuillez vous identifier :</p>
 
@@ -27,7 +29,16 @@
 		</p>
 		</form>
 	</div>
+	<br>
+	<div id="corps">
+		<center>
+			[corps de la page]<br>
+			TTTTTTTTTTTTTTTTTT<br>
+			TTTTTTTTTTTTTTTTTT<br>
+			TTTTTTTTTTTTTTTTTT<br>
+		</center>
+	</div>
+	<br>
 	
 <!-- pied de page -->
-
 <?php include("pied.php"); ?>
