@@ -8,7 +8,7 @@
 	<body>
 
 <!-- entete -->	
-<? include("entete.html"); ?>
+<? include("entete.php"); ?>
 
 <!-- menu -->
 <? include("menu.php"); ?>
@@ -20,6 +20,21 @@
 		<p>
 			Voilà le rôle du site.
 		</p>
+	</div>
+
+	<div id="login">
+		<p>Veuillez vous identifier :</p>
+
+		<form action="main.php" method="post">
+
+		<p>
+			<label><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="usename" required>
+			<label>password:</label>
+			<input type="password" name="password" />
+			<input type="submit" value="Valider" />
+		</p>
+		</form>
 	</div>
 	
 <!-- pied de page -->
