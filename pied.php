@@ -1,8 +1,10 @@
 	<footer id="pied-de-page">
 		<hr>
-		<p>Copyright: Cremaschi Julie | Ndiesseu Edith | Salma Mohammad<br>
-		Etudiants du Master BCD 2e année - Bioinformatique, Connaissances, Données<br><br>
-		Dernière mise à jour du site: 22/11/2017</br>
+		<p>Copyright: <label>Cremaschi Julie | Ndiesseu Edith | Salma Mohammad</label><br>
+		Etudiants en 2e année du Master BCD - Bioinformatique, Connaissances, Données<br>
+		HMIN115M - Technologies du web<br>
+		Université de Montpellier<br><br>
+		Dernière mise à jour du site: 22-11-2017</br>
 		</p>
 	</footer>
 
