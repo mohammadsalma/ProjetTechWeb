@@ -1,4 +1,5 @@
 	<footer id="pied-de-page">
+		<a href="#ancre" id="hautdepage">haut de page</a>
 		<hr>
 		<p>Copyright: <label>Cremaschi Julie | Ndiesseu Edith | Salma Mohammad</label><br>
 		Etudiants en 2e année du Master BCD - Bioinformatique, Connaissances, Données<br>
