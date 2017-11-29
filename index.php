@@ -27,11 +27,6 @@
 		</form>
 	</div>
 	<br>
-	<div id="corps">
-		<center>
-			[corps de la page]<br>
-		</center>
-	</div>
 	<br>
 	
 <!-- pied de page -->
