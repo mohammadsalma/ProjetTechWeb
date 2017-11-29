@@ -3,9 +3,6 @@
 
 <hr>
 
-<!-- menu -->
-<?php include("menu.php"); ?>
-
 <!-- corps -->
 	<br>
 	<div id="bienvenue">
