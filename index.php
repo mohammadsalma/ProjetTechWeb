@@ -6,26 +6,19 @@
 <!-- corps -->
 	<br>
 	<div id="bienvenue">
-		<h1>Bienvenue sur notre application</h1>
+		<h1>Bienvenue sur notre application !</h1>
 
-		<p>Cette application web va vous permettre de consulter gratuitement et rapidement des relevés botaniques. 
-			Connectez-vous pour ajouter ou supprimer des relevés.</p>
+		<p>Cette application web va vous permettre de consulter gratuitement et rapidement des relevés botaniques. <br>
+			Connectez-vous pour ajouter ou supprimer vos relevés !</p>
 	</div>
 	<br>
-	<div id="login">
-		<p>Pensez à vous identifier :</p>
-
-		<form action="main.html" method="post">
-
-		<p>
-			<label>Username</label>
-			<input type="text" placeholder="Identifiant" name="username" required>
-			<label>password :</label>
-			<input type="password" name="password" />
-			<input type="submit" value="Valider" />
-		</p>
-		</form>
+	<div id="co">
+		<?php include("login.php"); ?>
 	</div>
+
+	<!-- <div id="deco">
+		<?php //include("logout.php"); ?>
+	</div>-->
 	<br>
 	<br>
 	
