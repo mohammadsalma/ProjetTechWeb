@@ -19,9 +19,9 @@
 			<div class="element_menu">
 			<ul>
 				<li><a href="index.php">Accueil</a></li>
-				<li><a href="listedonnees.php">Consulter la base de données</a></li>
-				<li><a href="listedynamique.html">Liste dynamique</a></li>
-				<li><a href="ajoutsuppr.php">Ajouter/Supprimer des données</a></li>	
+				<li><a href="listedonnees.php">Consulter</a></li>
+				<li><a href="listedynamique.html">Rechercher</a></li>
+				<li><a href="ajoutsuppr.php">Ajouter/Supprimer</a></li>	
 			</ul>
 			</div>
 		</nav>
