@@ -15,10 +15,6 @@
 	<div id="co">
 		<?php include("login.php"); ?>
 	</div>
-
-	<!-- <div id="deco">
-		<?php //include("logout.php"); ?>
-	</div>-->
 	<br>
 	<br>
 	
