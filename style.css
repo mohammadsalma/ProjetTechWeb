@@ -51,17 +51,9 @@ nav#menu {
 div#bienvenue {
 	color: #437d1c;
 	text-align: justify;
-	width:700px;
+	width:100%;
 }
 
-div#login label {
-	font-size: 10pt;
-	font-weight: bold;
-}
-
-div#corps {
-
-}
 
 /* base de donnees */
 .tabledonnees {
