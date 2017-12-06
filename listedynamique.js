@@ -47,13 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
 		// On envoie la requête avec la méthode GET (car on ne transmet pas de données)
-        request.open("GET", "listedynamique.php");
+        var mtcle = document.getElementById('motcle');
+        request.open("GET", "listedynamique.php"+"?motcle="+mtcle.value);
         request.send();
     }
 
-    // Rafraichissement au chargement, puis toutes les 5 secondes
-    refresh();
-    setInterval(refresh, 5000);
+    var form = document.getElementById('liste-form');
+    form.addEventListener("submit", function(event) {
+       event.preventDefault();       
+       refresh(); 
+    });
 
 //	// On ajoute un écouteur d'événement sur le formulaire, pour intercepter l'action "submit" (quelqu'un
 //	// a cliqué sur le bouton "envoyer"), et appeler le Webservice d'écriture dans ce cas
