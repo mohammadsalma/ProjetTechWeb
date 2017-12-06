@@ -1,16 +1,18 @@
     <?php
-    // on se connecte à notre base
-    $base = mysql_connect ('serveur', 'login', 'pass');
-    mysql_select_db ('ma_base', $base) ;
+    // connexion à bdd.php
+    //$base = mysql_connect ('serveur', 'login', 'pass');
+    $bd = new PDO($dsn, $username, $password);
+    //mysql_select_db ('ma_base', $base) ;
+     mysql_select_db ('releves', $base) ;
     ?>
     <html>
     <head>
-    <title>Insertion de tibo dans la base</title>
+    <title>Insertion dune new plante dans la base</title>
     </head>
     <body>
     <?php
     // lancement de la requete
-    $sql = 'INSERT INTO liste_proprietaire VALUES ("", "tibo", "06-98-42-01-36")';
+    $sql = 'INSERT INTO releves VALUES ("id","nom_plante","lieu","latitude","longitude","date_releve"," photo","nom_collecteur","prenom_collecteur","commentaire");
 
     // on insere le tuple (mysql_query) et au cas où, on écrira un petit message d'erreur si la requête ne se passe pas bien (or die)
     mysql_query ($sql) or die ('Erreur SQL !'.$sql.'<br />'.mysql_error());
