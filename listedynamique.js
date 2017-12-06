@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		ret += line.photo;
 		ret += line.nom_collecteur;
 		ret += line.prenom_collecteur;
-		ret += line.commentraire;
+		ret += line.commentaire;
         ret += '</div></div>';
         return ret;
     }
@@ -51,13 +51,18 @@ document.addEventListener('DOMContentLoaded', function () {
         request.open("GET", "listedynamique.php"+"?motcle="+mtcle.value);
         request.send();
     }
-
+    // Recherche des que click
     var form = document.getElementById('liste-form');
     form.addEventListener("submit", function(event) {
        event.preventDefault();       
        refresh(); 
     });
-
+    // Recherche en temps réel
+    var formchamp = document.getElementById('motcle');
+    formchamp.addEventListener("keyup", function(event) {
+       event.preventDefault();       
+       refresh(); 
+    });
 //	// On ajoute un écouteur d'événement sur le formulaire, pour intercepter l'action "submit" (quelqu'un
 //	// a cliqué sur le bouton "envoyer"), et appeler le Webservice d'écriture dans ce cas
 //    var form = document.getElementById('msg-form');
