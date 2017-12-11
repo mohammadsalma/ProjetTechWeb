@@ -43,6 +43,7 @@
         <label for="Commentaire">Commentaire :</label>
         <input type="text" id="Commentaire" />
     </div>
+    <br>
     <div class="button">
         <button type="submit">Soummettre les données</button>
     </div>
