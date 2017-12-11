@@ -5,7 +5,7 @@
 		Etudiants en 2e année du Master BCD - Bioinformatique, Connaissances, Données<br>
 		HMIN115M - Technologies du web<br>
 		Université de Montpellier<br><br>
-		Dernière mise à jour du site: 06-12-2017</br>
+		Dernière mise à jour du site: 11-12-2017</br>
 		</p>
 	</footer>
 
