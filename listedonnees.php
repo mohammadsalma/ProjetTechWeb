@@ -3,6 +3,18 @@
 	include "bdd.php";// inclusion du fichier a lire
 	include "entete.php";
 
+	echo'<div id="co"><form action="login.php" method="post">
+      <fieldset>
+        <legend>Identifiez-vous :</legend>
+       <p>
+          <label for="login">Login :</label> 
+          <input type="text" name="login" id="login" value="" />
+          <label for="password">Password :</label> 
+          <input type="password" name="password" id="password" value="" /> 
+          <input type="submit" name="submit" value="Valider" />
+        </p>
+      </fieldset>
+    </form></div><br>';
 
 	$base= connexionbd();// me permet de me connecter a la base de donnée car ele contient toutes les informations
 	$req= 'Select * from releves';

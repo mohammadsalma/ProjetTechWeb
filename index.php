@@ -13,7 +13,18 @@
 	</div>
 	<br>
 	<div id="co">
-		<?php include("login.php"); ?>
+		    <form action="login.php" method="post">
+      <fieldset>
+        <legend>Identifiez-vous :</legend>
+       <p>
+          <label for="login">Login :</label> 
+          <input type="text" name="login" id="login" value="" />
+          <label for="password">Password :</label> 
+          <input type="password" name="password" id="password" value="" /> 
+          <input type="submit" name="submit" value="Valider" />
+        </p>
+      </fieldset>
+    </form>
 	</div>
 	<br>
 	<br>
