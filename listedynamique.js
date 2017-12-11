@@ -75,12 +75,64 @@ document.addEventListener('DOMContentLoaded', function () {
     
 
     
+    function addDonnees() {
+        
+    // On prépare une requête AJAX
+     var request = new XMLHttpRequest();
+        
+    //request.addEventListener('load', function(data) {
+    //    	// Debug: on affiche les données dans la conso 
+    //    });  
+        
+    var nomplant = document.getElementById('Nom_plante');
+        request.open("GET", "ajoutsuppr.php"+"?Nom_plante="+nomplant.value);
+        request.send();
     
     
+    var lieu = document.getElementById('Lieu');
+        request.open("GET", "ajoutsuppr.php"+"?Lieu="+lieu.value);
+        request.send();
+    
+    
+    var latitude = document.getElementById('Latitude');
+        request.open("GET", "ajoutsuppr.php"+"?Latitude="+latitude.value);
+        request.send();
+    
+    
+    var longitude = document.getElementById('Longitude');
+        request.open("GET", "ajoutsuppr.php"+"?Longitude="+longitude.value);
+        request.send();
+    
+    
+    var date_releve = document.getElementById('date_releve');
+        request.open("GET", "ajoutsuppr.php"+"?date_releve="+date_releve.value);
+        request.send();
+    
+    
+    var uRL_Photo = document.getElementById('URL_Photo');
+        request.open("GET", "ajoutsuppr.php"+"?URL_Photo="+uRL_Photo.value);
+        request.send();
+    
+    
+    var nom_collecteur = document.getElementById('Nom_collecteur');
+        request.open("GET", "ajoutsuppr.php"+"?Nom_collecteur="+nom_collecteur.value);
+        request.send();
+    
+    
+    var prenom_collecteur = document.getElementById('Prenom_collecteur');
+        request.open("GET", "ajoutsuppr.php"+"?Prenom_collecteur="+prenom_collecteur.value);
+        request.send();
+    
+    
+    var commentaire = document.getElementById('Commentaire');
+        request.open("GET", "ajoutsuppr.php"+"?Commentaire="+commentaire.value);
+        request.send();
+    
+    }
 	// On ajoute un écouteur d'événement sur le formulaire, pour intercepter l'action "submit" (quelqu'un
 	// a cliqué sur le bouton "envoyer"), et appeler le Webservice d'écriture dans ce cas
-    var formajout = document.getElementById('ajoutsuppr');
-    form.addEventListener("submit", function(event) {
+    var formajout = document.getElementById('soumettre');
+    formajout.addEventListener("submit", function(event) {
     	// On n'exécute pas l'action par défaut
         event.preventDefault();
 
@@ -88,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var request = new XMLHttpRequest();
 		// On définit ce qu'elle fera lorsqu'elle aura reçu une réponse
         request.addEventListener('load', function(data) {
-            console.log(JSON.parse(data.target.responseText));
+            //console.log(JSON.parse(data.target.responseText));
             // Si le code de retour est "erreur du serveur"
             if (data.target.status == 500) {
             	// On fait sauter une erreur explicite au nez de l'utilisateur (il serait
@@ -96,20 +148,24 @@ document.addEventListener('DOMContentLoaded', function () {
             	alert("erreur lors de l'envoi du message");
             } else if (data.target.status == 200) { // Sinon, si le code d'erreur est "ok"
             	// On vide le champ du message (juste pour faire joli)
-	            var textarea = document.getElementById('msg');
-	            textarea.value = '';
+	            //var textarea = document.getElementById('msg');
+	            //textarea.value = '';
+                // On envoie la requête avec la méthode POST (car on transmet des données)
+                addDonnees();
+                request.open("POST", "php/ajoutsuppr.php");
+                request.send(new FormData(formajout));
 	        }
         });
 		// ... et ce qu'elle fera en cas d'erreur
-        request.addEventListener('error', function(data) {
+            request.addEventListener('error', function(data) {
         	// On affiche une erreur
             console.log('error', data);
-        });
+            });
 
 		// On envoie la requête avec la méthode POST (car on transmet des données)
-        request.open("POST", "php/ajoutsuppr.php");
+        //request.open("POST", "php/ajoutsuppr.php");
         // On envoie les données que l'utilisateur a tapées dans le formulaire
-        request.send(new FormData(form));
-    });
-
+       // request.send(new FormData(formajout));
+        });
+    
 });

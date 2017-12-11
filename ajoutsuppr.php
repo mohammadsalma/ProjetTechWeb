@@ -1,5 +1,5 @@
 <!-- entete --> 
-<?php include("entete.php"); ?>
+<?php include("entete.php"); include ("bdd.php"); ?>
 
 <form action="formulaireajoutsuppr.php" method="post">
     <div id="ajoutsuppr">
@@ -24,7 +24,7 @@
         <br>
 
         <label for="URL_Photo">URL_Photo :</label>
-        <input type="text" id="Photo" />
+        <input type="text" id="URL_Photo" />
         <br>
 
         <label for="Nom_collecteur">Nom_collecteur :</label>
@@ -51,7 +51,7 @@ function addList(){
    $motalti = $_REQUEST['Latitude'];
    $motlong = $_REQUEST['Longitude'];
    $motdat = $_REQUEST['date_releve'];
-   $motphoto = $_REQUEST['Photo'];
+   $motphoto = $_REQUEST['URL_Photo'];
    $motn_col = $_REQUEST['Nom_collecteur'];
    $motpre_col = $_REQUEST['Prenom_collecteur'];
    $motComm = $_REQUEST['Commentaire'];
@@ -72,7 +72,7 @@ function addList(){
    
 }
 
-$list_data = addList();
+//$list_data = addList();
 ?>    
 <!-- pied de page -->
 <?php include("pied.php"); ?>
