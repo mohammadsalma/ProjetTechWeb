@@ -2,48 +2,50 @@
 <?php include("entete.php"); ?>
 
 <form action="formulaireajoutsuppr.php" method="post">
-    <div>
+    <div id="ajoutsuppr">
         <label for="Nom_plante">Nom plante :</label>
         <input type="text" id="Nom_plante" />
-    </div>
-    <div>
+        <br>
+
         <label for="Lieu">Lieu :</label>
         <input type="text" id="Lieu" />
-    </div>
-    <div>
+        <br>
+
         <label for="Latitude">Latitude :</label>
         <input type="text" id="Latitude" />
-    </div>
-    <div>
+        <br>
+
         <label for="Longitude">Longitude :</label>
         <input type="text" id="Longitude" />
-    </div>
-    <div>
+        <br>
+
         <label for="date_relevé">Date_relevé :</label>
         <input type="text" id="date_relevé" />
-    </div>
-    <div>
+        <br>
+
         <label for="Photo">Photo :</label>
         <input type="file" id="Photo" />
-    </div>
-    <div>
+        <br>
+
         <label for="Nom_collecteur">Nom_collecteur :</label>
         <input type="text" id="Nom_collecteur" />
-    </div>
-    <div>
+        <br>
+
         <label for="Prénom_collecteur">Prénom_collecteur:</label>
         <input type="text" id="Prénom_collecteur" />
-    </div>
-   
-    <div>
+        <br>
+
         <label for="Commentaire">Commentaire :</label>
         <input type="text" id="Commentaire" />
-    </div>
-    <br>
-    <div class="button">
-        <button type="submit">Soummettre</button>
-    </div>
+        <br>
+
+        <button type="submit" id="soumettre">Soummettre</button>
+        </div>
 </form>
+
+<!-- emplacement liste donnees statiquee-->
+
+
     
 <!-- pied de page -->
 <?php include("pied.php"); ?>
