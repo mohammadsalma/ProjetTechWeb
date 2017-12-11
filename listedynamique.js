@@ -9,19 +9,28 @@ document.addEventListener('DOMContentLoaded', function () {
         var ret = '';
 		ret += '<div class="panel panel-default">';
         ret += '<div class="panel-heading">';
-        ret += '<h3 class="panel-title">' + line.nom_plante + '</h3>';
+        ret += '<h3 class="panel-title">'+ ' '+ '<thead><tr>' + 
+                '<th> Nom</th>'+' '+ '<th> Lieu</th>'+ ' '+
+                '<th> Latitude</th>'+ ' '+
+                '<th> Date du relevé</th>'+ '  '+
+                '<th> Photo </th>'+ '  '+
+                '<th> Nom du collecteur</th>'+ '  '+
+                '<th> Prenom du collecteur</th>'+ '  '+
+                '<th> Commentaire(s)</th></tr>'+
+                '</thead>'+
+                '</h3>';
         ret += '</div>';
         ret += '<div class="panel-body">';
-        ret += line.id;
-		ret += line.nom_plante;
-		ret += line.lieu;
-		ret += line.latitude;
-		ret += line.longitude;
-		ret += line.date_releve;
-		ret += line.photo;
-		ret += line.nom_collecteur;
-		ret += line.prenom_collecteur;
-		ret += line.commentaire;
+        ret += '<tbody><tr><td>'+line.id;
+		ret += ' '+' </td><td>' +line.nom_plante;
+		ret += ' '+ ' </td><td>' +line.lieu;
+		ret += ' '+ ' </td><td>' +line.latitude;
+		ret += ' '+ ' </td><td>' +line.longitude;
+		ret += ' '+ ' </td><td>' +line.date_releve;
+		ret += ' '+ ' </td><td id="td_img"> <img src="'+ line.photo +'">"," </td>';
+		ret += ' '+ ' </td><td>' +line.nom_collecteur;
+		ret += ' '+ ' </td><td>' +line.prenom_collecteur;
+		ret += ' '+ ' </td><td>' +line.commentaire+ '</tr></tbody>';
         ret += '</div></div>';
         return ret;
     }
@@ -36,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //console.log(data.target.responseText));
             // On décode les données renvoyées par le Webservice
             var ret = JSON.parse(data.target.responseText);
-			console.log(ret);
+            console.log(ret);
             var new_html = '';
             // Pour chaque message du jeu de données renvoyé, on construit une portion de HTML
             for (var i = 0; i < ret.length; i++) {
