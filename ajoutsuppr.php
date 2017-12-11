@@ -1,9 +1,7 @@
-<html>
-    <head>
-    <title>Insertion dune new plante dans la base</title>
-    </head>
-    <body>
-<form action="/ajouter des données" method="post">
+<!-- entete --> 
+<?php include("entete.php"); ?>
+
+<form action="formulaireajoutsuppr.php" method="post">
     <div>
         <label for="Id">Id :</label>
         <input type="text" id="Id" />
@@ -49,6 +47,6 @@
         <button type="submit">Soummettre les données</button>
     </div>
 </form>
-        </body>
-</html>
-
+    
+<!-- pied de page -->
+<?php include("pied.php"); ?>
