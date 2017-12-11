@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function build_list_html(line) {
         var ret = '';
         ret += '<div class="panel-heading">' + '<table class= "tabledonnees"><thead><tr>' + 
-                '<th> Nom</th>'+ '<th> Lieu</th>'+
+                '<th> </th> <th> Nom</th>'+ '<th> Lieu</th>'+
                 '<th> Latitude</th>'+
                 '<th> Longitude</th>'+
                 '<th> Date du relevé</th>'+
@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
         ret += '</div>';
         ret += '<div class="panel-body">';
         ret += '<tbody><tr>';
-		ret += ' <td>' +line.nom_plante;
+        ret += '<td> <input type="checkbox" name="delete" value="idLine">';
+		ret += ' </td><td>' +line.nom_plante;
 		ret += ' </td><td>' +line.lieu;
 		ret += ' </td><td>' +line.latitude;
 		ret += ' </td><td>' +line.longitude;
