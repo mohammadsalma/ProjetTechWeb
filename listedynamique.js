@@ -77,39 +77,39 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
-//	// On ajoute un écouteur d'événement sur le formulaire, pour intercepter l'action "submit" (quelqu'un
-//	// a cliqué sur le bouton "envoyer"), et appeler le Webservice d'écriture dans ce cas
-//    var form = document.getElementById('msg-form');
-//    form.addEventListener("submit", function(event) {
-//    	// On n'exécute pas l'action par défaut
-//        event.preventDefault();
-//
-//		// On prépare une requête AJAX
-//        var request = new XMLHttpRequest();
-//		// On définit ce qu'elle fera lorsqu'elle aura reçu une réponse
-//        request.addEventListener('load', function(data) {
-//            console.log(JSON.parse(data.target.responseText));
-//            // Si le code de retour est "erreur du serveur"
-//            if (data.target.status == 500) {
-//            	// On fait sauter une erreur explicite au nez de l'utilisateur (il serait
-//            	// mieux d'afficher un message plus discret dans la page)
-//            	alert("erreur lors de l'envoi du message");
-//            } else if (data.target.status == 200) { // Sinon, si le code d'erreur est "ok"
-//            	// On vide le champ du message (juste pour faire joli)
-//	            var textarea = document.getElementById('msg');
-//	            textarea.value = '';
-//	        }
-//        });
-//		// ... et ce qu'elle fera en cas d'erreur
-//        request.addEventListener('error', function(data) {
-//        	// On affiche une erreur
-//            console.log('error', data);
-//        });
-//
-//		// On envoie la requête avec la méthode POST (car on transmet des données)
-//        request.open("POST", "php/add_msg.php");
-//        // On envoie les données que l'utilisateur a tapées dans le formulaire
-//        request.send(new FormData(form));
-//    });
+	// On ajoute un écouteur d'événement sur le formulaire, pour intercepter l'action "submit" (quelqu'un
+	// a cliqué sur le bouton "envoyer"), et appeler le Webservice d'écriture dans ce cas
+    var formajout = document.getElementById('ajoutsuppr');
+    form.addEventListener("submit", function(event) {
+    	// On n'exécute pas l'action par défaut
+        event.preventDefault();
+
+		// On prépare une requête AJAX
+        var request = new XMLHttpRequest();
+		// On définit ce qu'elle fera lorsqu'elle aura reçu une réponse
+        request.addEventListener('load', function(data) {
+            console.log(JSON.parse(data.target.responseText));
+            // Si le code de retour est "erreur du serveur"
+            if (data.target.status == 500) {
+            	// On fait sauter une erreur explicite au nez de l'utilisateur (il serait
+            	// mieux d'afficher un message plus discret dans la page)
+            	alert("erreur lors de l'envoi du message");
+            } else if (data.target.status == 200) { // Sinon, si le code d'erreur est "ok"
+            	// On vide le champ du message (juste pour faire joli)
+	            var textarea = document.getElementById('msg');
+	            textarea.value = '';
+	        }
+        });
+		// ... et ce qu'elle fera en cas d'erreur
+        request.addEventListener('error', function(data) {
+        	// On affiche une erreur
+            console.log('error', data);
+        });
+
+		// On envoie la requête avec la méthode POST (car on transmet des données)
+        request.open("POST", "php/ajoutsuppr.php");
+        // On envoie les données que l'utilisateur a tapées dans le formulaire
+        request.send(new FormData(form));
+    });
 
 });
