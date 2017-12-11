@@ -72,6 +72,11 @@ document.addEventListener('DOMContentLoaded', function () {
        event.preventDefault();       
        refresh(); 
     });
+    
+
+    
+    
+    
 //	// On ajoute un écouteur d'événement sur le formulaire, pour intercepter l'action "submit" (quelqu'un
 //	// a cliqué sur le bouton "envoyer"), et appeler le Webservice d'écriture dans ce cas
 //    var form = document.getElementById('msg-form');
