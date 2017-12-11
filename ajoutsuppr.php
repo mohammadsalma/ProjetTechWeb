@@ -23,8 +23,8 @@
         <input type="text" id="date_relevé" />
         <br>
 
-        <label for="Photo">Photo :</label>
-        <input type="file" id="Photo" />
+        <label for="URL_Photo">URL_Photo :</label>
+        <input type="text" id="Photo" />
         <br>
 
         <label for="Nom_collecteur">Nom_collecteur :</label>
