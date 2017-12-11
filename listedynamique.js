@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		ret += '<div class="panel panel-default">';
         ret += '<div class="panel-heading">';
         ret += '<h3 class="panel-title">'+ ' '+ '<thead><tr>' + 
-                '<th> Nom</th>'+' '+ '<th> Lieu</th>'+ ' '+
+                '<th> Nom</th>'+ '<th> Lieu</th>'+ ' '+
                 '<th> Latitude</th>'+ ' '+
                 '<th> Date du relevé</th>'+ '  '+
                 '<th> Photo </th>'+ '  '+
