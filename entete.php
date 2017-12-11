@@ -20,7 +20,7 @@
 				<li><a href="index.php">Accueil</a></li>
 				<li><a href="listedonnees.php">Consulter</a></li>
 				<li><a href="listedynamique.html">Rechercher</a></li>
-				<li><a href="ajoutsuppr.php">Ajouter/Supprimer</a></li>	
+				<li><a href="ajoutsuppr.html">Ajouter/Supprimer</a></li>	
 			</ul>
 			</div>
 		</nav>
