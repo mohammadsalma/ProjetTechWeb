@@ -1,4 +1,3 @@
-    <?php
 <html>
     <head>
     <title>Insertion dune new plante dans la base</title>
@@ -52,4 +51,4 @@
 </form>
         </body>
 </html>
-?>
+
