@@ -12,11 +12,12 @@
 
 	// lecture du resultat
 	//echo'<html><head><meta charset="utf-8"/><title>Consultation de la BD</title><link rel="stylesheet" type="text/css" href="style.css"></head><body>';
-	echo'<table summary="Vous consultez la table de la base de données" class="tabledonnees">';
+	echo'<table class="tabledonnees">';
 	echo'<thead><tr>
 			<th> Nom</th>
 			<th> Lieu</th>
 			<th> Latitude</th>
+			<th> Longitude</th>
 			<th> Date du relevé</th>
 			<th> Photo</th>
 			<th> Nom du collecteur</th>
@@ -33,6 +34,7 @@
 		<td>',$ligne['nom_plante'],' </td><td> ',
 		$ligne['lieu'],' </td><td> ',
 		$ligne['latitude'], ' </td><td> ',
+		$ligne['longitude'], ' </td><td> ',
 		$ligne['date_releve'], ' </td><td id="td_img"> ',
 		"<img src=",$ligne['photo'],">"," </td><td> ",
 		$ligne['nom_collecteur'], ' </td><td> ',
