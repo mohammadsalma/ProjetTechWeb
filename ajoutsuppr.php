@@ -28,10 +28,10 @@
     </div>
     <div>
         <label for="Photo">Photo :</label>
-        <input type="text" id="Photo" />
+        <input type="image" id="Photo" />
     </div>
     <div>
-        <label for="Nom_collecteur">NNom_collecteur :</label>
+        <label for="Nom_collecteur">Nom_collecteur :</label>
         <input type="text" id="Nom_collecteur" />
     </div>
     <div>
