@@ -3,10 +3,6 @@
 
 <form action="formulaireajoutsuppr.php" method="post">
     <div>
-        <label for="Id">Id :</label>
-        <input type="text" id="Id" />
-    </div>
-    <div>
         <label for="Nom_plante">Nom plante :</label>
         <input type="text" id="Nom_plante" />
     </div>
@@ -23,12 +19,12 @@
         <input type="text" id="Longitude" />
     </div>
     <div>
-        <label for="date_relevé">date_relevé :</label>
+        <label for="date_relevé">Date_relevé :</label>
         <input type="text" id="date_relevé" />
     </div>
     <div>
         <label for="Photo">Photo :</label>
-        <input type="image" id="Photo" />
+        <input type="file" id="Photo" />
     </div>
     <div>
         <label for="Nom_collecteur">Nom_collecteur :</label>
@@ -45,7 +41,7 @@
     </div>
     <br>
     <div class="button">
-        <button type="submit">Soummettre les données</button>
+        <button type="submit">Soummettre</button>
     </div>
 </form>
     
