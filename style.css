@@ -81,3 +81,12 @@ div#bienvenue {
 #td_img img {
 	max-width: 300px;
 }
+
+div#ajoutsuppr {
+	text-align: center;
+	line-height: 30px;
+}
+
+button#soumettre {
+	font-weight: bold;
+}
