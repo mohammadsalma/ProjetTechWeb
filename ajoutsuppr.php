@@ -39,7 +39,7 @@
         <input type="text" id="Commentaire" />
         <br>
 
-        <button type="submit" id="soumettre">Soummettre</button>
+        <button type="submit" id="soumettre">Soumettre</button>
         </div>
 </form>
 
