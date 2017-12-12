@@ -1,5 +1,3 @@
-
-<!-- emplacement liste donnees statiquee-->
 <?php
 include ("bdd.php");
 
@@ -19,20 +17,20 @@ catch (Exception $e) {
 
 
 function addList(){
-   $motnom = $_REQUEST['Nom_plante'];
+   $motnom = $_POST['Nom_plante'];
    //$motnom = "hhh";
-   $motlieu = $_REQUEST['Lieu'];
-   $motalti = $_REQUEST['Latitude'];
-   $motlong = $_REQUEST['Longitude'];
-   $motdat = $_REQUEST['date_releve'];
-   $motphoto = $_REQUEST['URL_Photo'];
-   $motn_col = $_REQUEST['Nom_collecteur'];
-   $motpre_col = $_REQUEST['Prenom_collecteur'];
-   $motComm = $_REQUEST['Commentaire'];
+   $motlieu = $_POST['Lieu'];
+   $motalti = $_POST['Latitude'];
+   $motlong = $_POST['Longitude'];
+   $motdat = $_POST['date_releve'];
+   $motphoto = $_POST['URL_Photo'];
+   $motn_col = $_POST['Nom_collecteur'];
+   $motpre_col = $_POST['Prenom_collecteur'];
+   $motComm = $_POST['Commentaire'];
 
    $base= connexionbd();// me permet de me connecter a la base de donnée car ele contient toutes les informations
 
-   $req= "INSERT INTO releves VALUES "."(DEFAULT, '".$motnom."', 'Mauguio, dans un champ', 43.61085, 4.02314, '1992-04-30', 'http://api.tela-botanica.org/img:000276001O.jpg', 'Passure', 'Alice', 'Je ne suis pas certaine du nom de la plante')";
+   $req= "INSERT INTO releves VALUES "."(DEFAULT, '".$motnom."', '".$motlieu."', ".$motalti.", ".$motlong.", '".$motdat."', '".$motphoto."', '".$motn_col."', '".$motpre_col."', '".$motComm."')";
    //$req= "INSERT INTO releves VALUES (DEFAULT, '".$motnom."', 
    //                                   '".$motlieu."',
    //                                     '".$motalti."',
@@ -43,10 +41,11 @@ function addList(){
    //                                     '".$motpre_col."',
    //                                     '".$motComm."')"
    //                                    ;
-   echo $req;                      
+   //echo $req;                      
    $requete=requete($base,$req);
 }
 
-$list_data = addList();
-?>    
+addList();
 
+header('Location: ajoutsuppr.html');
+?>
