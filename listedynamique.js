@@ -162,10 +162,6 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('error', data);
             });
 
-		// On envoie la requête avec la méthode POST (car on transmet des données)
-        //request.open("POST", "php/ajoutsuppr.php");
-        // On envoie les données que l'utilisateur a tapées dans le formulaire
-       // request.send(new FormData(formajout));
         });
     
 });
