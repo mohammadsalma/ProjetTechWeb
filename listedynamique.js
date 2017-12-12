@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	            //textarea.value = '';
                 // On envoie la requête avec la méthode POST (car on transmet des données)
                 addDonnees();
-                request.open("POST", "php/ajoutsuppr.php");
+                request.open("POST", "ajoutsuppr.php");
                 request.send(new FormData(formajout));
 	        }
         });
