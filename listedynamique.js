@@ -71,5 +71,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		event.preventDefault();
 		refresh();
 	});
+<<<<<<< HEAD
+	refresh();
+});
+=======
 
 });
+>>>>>>> 3c4555815039a49af935fd054d5194c3da021028
