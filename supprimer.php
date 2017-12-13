@@ -15,7 +15,7 @@ catch (Exception $e) {
 
 $base= connexionbd();
 // TOUJOURS utiliser cette commande quand tu récupères des variables dont on n'est pas sur de la provenance sinon on peut te faire une injection SQL
-$id = $_GET["id"];
+$id = $_POST["id"];
 // Execution de la requête
 $req= "DELETE FROM releves WHERE id ='".$id."'";
 echo $req;
