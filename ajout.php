@@ -40,11 +40,11 @@ echo '
         <input type="text" id="Longitude" name="Longitude"/>
         <br>
 
-        <label for="date_relevé">Date_relevé (aa-mm-jj) :</label>
+        <label for="date_relevé">Date_relevé (aaaa-mm-jj) :</label>
         <input type="text" id="date_releve" name="date_releve"/>
         <br>
 
-        <label for="URL_Photo">URL_Photo :</label>
+        <label for="URL_Photo">Photo (URL) :</label>
         <input type="text" id="URL_Photo" name="URL_Photo"/>
         <br>
 
@@ -56,7 +56,7 @@ echo '
         <input type="text" id="Prenom_collecteur" name="Prenom_collecteur"/>
         <br>
 
-        <label for="Commentaire">Commentaire :</label>
+        <label for="Commentaire">Commentaire(s) :</label>
         <input type="text" id="Commentaire" name="Commentaire"/>
         <br>
 
