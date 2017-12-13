@@ -24,7 +24,7 @@ echo '
 <!--<form action="formulaireajoutsuppr.php" method="post">-->
 <form action="protoajout.php" method="post">
     <div id="ajoutsuppr">
-        Merci de bien vouloir remplir tous les champs : <br>
+        Merci de bien vouloir remplir tous les champs :<br>
 
         <label for="Nom_plante">Nom plante : </label>
         <input type="text" id="Nom_plante" name="Nom_plante" />
@@ -42,10 +42,6 @@ echo '
         <input type="text" id="Longitude" name="Longitude"/>
         <br>
 
-        <label for="date_relevé">Date_relevé : </label>
-        <input type="date" id="date_releve" name="date_releve"/>
-        <br>
-        
         <label for="date_relevé">Date_relevé : </label>
         <input type="date" id="date_releve" name="date_releve"/>
         <br>

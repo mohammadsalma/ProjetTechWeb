@@ -24,8 +24,5 @@ $requete=requete($base,$req);
 echo 'Données supprimées avec succès !';
 
 header('Refresh: 2; url=listedynamique.html');
-<<<<<<< HEAD
+
 ?>
-=======
-?>
->>>>>>> 3c4555815039a49af935fd054d5194c3da021028

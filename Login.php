@@ -1,6 +1,5 @@
 <?php
 session_start(); // Starting Session
-<<<<<<< HEAD
 
 include("bdd.php");
 
@@ -53,8 +52,6 @@ if (isset($_POST['submit'])) {
 //mysql_close($connection); // Closing Connection
    }
 }
-?>
-=======
 
 include("bdd.php");
 $error=''; // Variable To Store Error Message
@@ -93,5 +90,3 @@ echo $error;
 }
 }
 ?>
-
->>>>>>> 3c4555815039a49af935fd054d5194c3da021028

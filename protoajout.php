@@ -38,5 +38,5 @@ function addList(){
 addList();
 //appel fonction
 
-header('Refresh: 2; url=ajout.php');
+header('Refresh: 2; url=listedynamique.html');
 ?>

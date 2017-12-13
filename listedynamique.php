@@ -27,8 +27,4 @@ http_response_code(200);
 
 echo json_encode($list_data);
 
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> 3c4555815039a49af935fd054d5194c3da021028
