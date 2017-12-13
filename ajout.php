@@ -1,26 +1,6 @@
 <!-- entete --> 
 <?php include("entete.php"); ?>
 
-<?php
-echo '    
-    <div id="co">
-        <form action="login.php" method="post">
-          <fieldset>
-            <legend>Identifiez-vous :</legend>
-              <p>
-                 <label for="login">Login : </label> 
-                 <input type="text" name="login" id="login" value="test" />
-                 <label for="password">Password : </label> 
-                 <input type="password" name="password" id="password" value="123" />
-                 <br>
-                 <input type="submit" name="submit" value="Valider" />
-               </p>
-          </fieldset>
-        </form>
-    </div>
-    <br>'
-?>
-
 <!--<form action="formulaireajoutsuppr.php" method="post">-->
 <form action="protoajout.php" method="post">
     <div id="ajoutsuppr">
