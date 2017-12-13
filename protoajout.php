@@ -31,11 +31,12 @@ function addList(){
    $req= "INSERT INTO releves VALUES "."(DEFAULT, '".$motnom."', '".$motlieu."', ".$motalti.", ".$motlong.", '".$motdat."', '".$motphoto."', '".$motn_col."', '".$motpre_col."', '".$motComm."')";
    //insertion dans la base de données  
    $requete=requete($base,$req);
+
+   echo 'Données envoyées avec succès !';
 }
 
 addList();
 //appel fonction
 
-header('Location: ajout.php');
-//redirection sur la page
+header('Refresh: 2; url=ajout.php');
 ?>
