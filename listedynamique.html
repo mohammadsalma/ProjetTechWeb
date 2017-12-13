@@ -10,7 +10,7 @@
 
     <header id="entete">
       <center>
-        <img src="https://image.freepik.com/free-icon/plant-with-leaves_318-56717.jpg" width="15%" alt="logo" id="ancre">
+        <a href="index.php"><img src="https://image.freepik.com/free-icon/plant-with-leaves_318-56717.jpg" width="15%" alt="logo" id="ancre"></a>
       </center>
     </header>
 
@@ -20,7 +20,7 @@
         <li><a href="index.php">Accueil</a></li>
         <li><a href="listedonnees.php">Consulter</a></li>
         <li><a href="listedynamique.html">Rechercher</a></li>
-        <li><a href="ajoutsuppr.php">Ajouter/Supprimer</a></li> 
+        <li><a href="ajout.php">Ajouter des données</a></li> 
       </ul>
       </div>
     </nav>
@@ -30,10 +30,11 @@
           <fieldset>
             <legend>Identifiez-vous :</legend>
               <p>
-                 <label for="login">Login :</label> 
+                 <label for="login">Login : </label> 
                  <input type="text" name="login" id="login" value="" />
-                 <label for="password">Password :</label> 
-                 <input type="password" name="password" id="password" value="" /> 
+                 <label for="password">Password : </label> 
+                 <input type="password" name="password" id="password" value="" />
+                 <br>
                  <input type="submit" name="submit" value="Valider" />
                </p>
           </fieldset>
@@ -44,12 +45,11 @@
     <div id="main">
       
       <form id="liste-form">
-        <div class="form-group">
-          <br><label for="motcle">Recherche</label>
+        <div class="form-group" id="recherche">
+          <br><label for="motcle">Recherche : </label>
           <input type="text" class="form-control" id="motcle" name="motcle">
+        <button type="submit" class="btn btn-primary" id="rechercher">Rechercher</button>
         </div>
-        <br>
-        <button type="submit" class="btn btn-primary">Rechercher</button>
       </form>
       <br>
     <div id="lines">
@@ -67,7 +67,7 @@
     Etudiants en 2e année du Master BCD - Bioinformatique, Connaissances, Données<br>
     HMIN115M - Technologies du web<br>
     Université de Montpellier<br><br>
-    Dernière mise à jour du site: 06-12-2017</br>
+    Dernière mise à jour du site: 13-12-2017</br>
     </p>
   </footer>
 
