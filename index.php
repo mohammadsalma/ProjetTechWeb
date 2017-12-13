@@ -17,10 +17,11 @@
       <fieldset>
         <legend>Identifiez-vous :</legend>
        <p>
-          <label for="login">Login :</label> 
+          <label for="login">Login : </label> 
           <input type="text" name="login" id="login" value="" />
-          <label for="password">Password :</label> 
-          <input type="password" name="password" id="password" value="" /> 
+          <label for="password">Password : </label> 
+          <input type="password" name="password" id="password" value="" />
+          <br>
           <input type="submit" name="submit" value="Valider" />
         </p>
       </fieldset>
