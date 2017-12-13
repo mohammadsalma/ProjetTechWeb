@@ -18,9 +18,9 @@
         <legend>Identifiez-vous :</legend>
        <p>
           <label for="username">Username : </label> 
-          <input type="text" name="username" id="username" value="test" />
+          <input type="text" name="username" id="username" value="username" />
           <label for="password">Password : </label> 
-          <input type="password" name="password" id="password" value="123" /> 
+          <input type="password" name="password" id="password" value="password" /> 
           <br>
           <input type="submit" name="submit" value="Valider" />
         </p>

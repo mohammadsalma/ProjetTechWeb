@@ -32,11 +32,12 @@ function addList(){
    //insertion dans la base de données  
    $requete=requete($base,$req);
 
-   echo 'Données envoyées avec succès !';
+   //echo 'Données envoyées avec succès !';
 }
 
 addList();
 //appel fonction
 
 header('Refresh: 2; url=listedynamique.html');
+echo 'Données envoyées avec succès !';
 ?>

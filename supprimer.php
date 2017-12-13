@@ -21,8 +21,8 @@ $req= "DELETE FROM releves WHERE id ='".$id."'";
 //echo $req;
 $requete=requete($base,$req);
 
-echo 'Données supprimées avec succès !';
+
 
 header('Refresh: 2; url=listedynamique.html');
-
+echo 'Données supprimées avec succès !';
 ?>

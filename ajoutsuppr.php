@@ -31,16 +31,7 @@ function addList(){
    $base= connexionbd();// me permet de me connecter a la base de donnée car ele contient toutes les informations
 
    $req= "INSERT INTO releves VALUES "."(DEFAULT, '".$motnom."', '".$motlieu."', ".$motalti.", ".$motlong.", '".$motdat."', '".$motphoto."', '".$motn_col."', '".$motpre_col."', '".$motComm."')";
-   //$req= "INSERT INTO releves VALUES (DEFAULT, '".$motnom."', 
-   //                                   '".$motlieu."',
-   //                                     '".$motalti."',
-   //                                     '".$motlong."',
-   //                                     '".$motdat."',
-   //                                     '".$motphoto."',
-   //                                     '".$motn_col."',
-   //                                     '".$motpre_col."',
-   //                                     '".$motComm."')"
-   //                                    ;
+
    //echo $req;                      
    $requete=requete($base,$req);
 }
