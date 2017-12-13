@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		ret += '</div>';
 		ret += '<div class="panel-body">';
 		ret += '<tbody><tr>';
-		ret += '<td> <form action="supprimer.php" method="post"> <input type="button" value="Supprimer" name="'+line.id+'"></form>';
+		ret += '<td> <form action="supprimer.php" method="post"> <input type="hidden" name="id" value="'+line.id+'"/><input type="submit" value="Supprimer" name="Supprimer"></form>';
 		//ret += '<td> <input type="checkbox" name="delete" value="'+line.id+'">'
 		ret += ' </td><td>' + line.nom_plante;
 		ret += ' </td><td>' + line.lieu;

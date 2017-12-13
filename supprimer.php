@@ -18,6 +18,8 @@ $base= connexionbd();
 $id = $_POST["id"];
 // Execution de la requête
 $req= "DELETE FROM releves WHERE id ='".$id."'";
-echo $req;
+//echo $req;
 $requete=requete($base,$req);
+
+header('Location: listedynamique.html');
 ?>
