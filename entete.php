@@ -24,3 +24,19 @@
 			</ul>
 			</div>
 		</nav>
+		<div id="co">
+        <form action="Login.php" method="post">
+      	<fieldset>
+        <legend>Identifiez-vous :</legend>
+       	<p>
+        	<label for="username">Username : </label> 
+        	<input type="text" name="username" id="username" value="test" />
+        	<label for="password">Password : </label> 
+          	<input type="password" name="password" id="password" value="123" /> 
+          	<br>
+          	<input type="submit" name="submit" value="Valider" />
+        </p>
+      	</fieldset>
+    	</form>
+  		</div>
+  	<br>
