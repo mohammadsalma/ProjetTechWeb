@@ -11,7 +11,8 @@
       Connectez-vous pour ajouter ou supprimer vos relevés !</p>
   </div>
   <br>
-  <div id="co">
+
+  <!--<div id="co">
         <form action="Login.php" method="post">
       <fieldset>
         <legend>Identifiez-vous :</legend>
@@ -25,7 +26,7 @@
         </p>
       </fieldset>
     </form>
-  </div>
+  </div>-->
   <br>
   <br>
   

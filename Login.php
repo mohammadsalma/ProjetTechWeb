@@ -29,7 +29,7 @@ function get_compte() {
 
 			// récupérer les infos utiles de l'utilisateur
 			$_SESSION['login']=$login;
-         header('Refresh: 10; url=session.php');
+         header('Refresh: 3; url=session.php');
 			echo "You are now logged in as " . $login;
 		}
 	}
