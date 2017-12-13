@@ -40,7 +40,7 @@ echo '
         <input type="text" id="Longitude" name="Longitude"/>
         <br>
 
-        <label for="date_relevé">Date_relevé :</label>
+        <label for="date_relevé">Date_relevé (aa-mm-jj) :</label>
         <input type="text" id="date_releve" name="date_releve"/>
         <br>
 
