@@ -11,7 +11,6 @@
       Connectez-vous pour ajouter ou supprimer vos relevés !</p>
   </div>
   <br>
-<<<<<<< HEAD
   <div id="co">
         <form action="Login.php" method="post">
       <fieldset>
@@ -29,8 +28,6 @@
   </div>
   <br>
   <br>
-=======
->>>>>>> ef2efded7380935d7a6847dd0815f5acc86a248c
   
 <!-- pied de page -->
 <?php include("pied.php"); ?>
