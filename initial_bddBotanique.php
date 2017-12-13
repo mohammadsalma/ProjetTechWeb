@@ -14,6 +14,7 @@ try {
 // Pour la creation de table
 try {
     creation_table();
+    vidage_table();
     echo " La table a été créée <br>";
 }
     catch (Exception $e) {

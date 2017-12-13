@@ -1,3 +1,4 @@
+<?php include 'session.php'; ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,19 +25,32 @@
 			</ul>
 			</div>
 		</nav>
-		<div id="co">
-        <form action="Login.php" method="post">
-      	<fieldset>
-        <legend>Identifiez-vous :</legend>
-       	<p>
-        	<label for="username">Username : </label> 
-        	<input type="text" name="username" id="username" value="test" />
-        	<label for="password">Password : </label> 
-          	<input type="password" name="password" id="password" value="123" /> 
-          	<br>
-          	<input type="submit" name="submit" value="Valider" />
-        </p>
-      	</fieldset>
-    	</form>
-  		</div>
+		<?php
+		if(!$logged_in) {
+			?>
+			<div id="co">
+			<form action="Login.php" method="post">
+			<fieldset>
+			<legend>Identifiez-vous :</legend>
+			<p>
+				<label for="username">Username : </label> 
+				<input type="text" name="username" id="username" value="test" />
+				<label for="password">Password : </label> 
+				<input type="password" name="password" id="password" value="123" /> 
+				<br>
+				<input type="submit" name="submit" value="Valider" />
+			</p>
+			</fieldset>
+			</form>
+			</div>
+			<?php
+		} else {
+			?>
+			<div id="co">
+				Vous êtes connecté en tant que <?php echo $_SESSION['username']; ?><br>
+				<a href="logout.php">Se déconnecter</a>
+			</div>
+			<?php
+		}
+		?>
   	<br>

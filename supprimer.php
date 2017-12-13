@@ -12,7 +12,7 @@ catch (Exception $e) {
 	// Et on sort du programme, car on est dans un cas d'erreur
 	exit;
 }
-
+// ajouter loged in
 $base= connexionbd();
 // TOUJOURS utiliser cette commande quand tu récupères des variables dont on n'est pas sur de la provenance sinon on peut te faire une injection SQL
 $id = $_POST["id"];

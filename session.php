@@ -11,20 +11,26 @@ $connection = connexionbd();
 // Selecting Database
 //$db = mysql_select_db("identif", $connection);
 
+$logged_in = false;
 // Storing Session
-$user_check=$_SESSION['username'];
+if (isset($_SESSION['username'])){
+	$user_check=$_SESSION['username'];
 
-
-// SQL Query To Fetch Complete Information Of User
-$ses_sql= "select usename from identif where username='".$user_check."'";
-
-$row = requete($connection,$ses_sql);
-
-$login_session =$row['username'];
-
-if(!isset($login_session)){
-	//$connection = null; // Closing Connection
-	header('Location: index.php'); // Redirecting To Home Page
-
+	// SQL Query To Fetch Complete Information Of User
+	$ses_sql= "select username from identif where username='".$user_check."'";
+	
+	$result = requete($connection,$ses_sql);
+	echo "1<br>";
+	
+	if(sizeof($result) > 0){
+		$logged_in = true;
+		echo "2<br>";
+	} else {
+		// Session invalide : l'utilisateur n'existe pas !
+		session_destroy();
+		session_start();
+		echo "3<br>";
 	}
+}
+
 ?>

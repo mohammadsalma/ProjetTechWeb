@@ -1,5 +1,6 @@
 <?php   
-	include "bdd.php";// inclusion du fichier a lire
+	//include "bdd.php";// inclusion du fichier a lire
+	// media query
 	include "entete.php";
 
 	$base= connexionbd();

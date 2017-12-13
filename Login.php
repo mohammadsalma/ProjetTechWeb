@@ -1,6 +1,4 @@
 <?php
-
-
 include('bdd.php');
 
 // reste des données obligatoires
@@ -14,12 +12,12 @@ function get_compte() {
 		$password=($_POST['password']);
 
 		// requête SQL pour vérifier l'utilisateur
-		$data = "SELECT * FROM identif WHERE usename = '$login' AND password ='$password'";
+		$data = "SELECT * FROM identif WHERE username = '$login' AND password ='$password'";
       //echo $data;
-		$lines = $data;
+      $lines = requete($bd, $data);
 
 		// tester le résultat de l'éxécution (si l'utilisateur est enregistré ou non dans la BD)
-		if ($lines != 0)
+		if ($lines == 0)
 		{
 			echo "Can not log in: Non-existent login or bad password.";
 		}
@@ -28,8 +26,8 @@ function get_compte() {
 			session_start();
 
 			// récupérer les infos utiles de l'utilisateur
-			$_SESSION['login']=$login;
-         header('Refresh: 3; url=session.php');
+			$_SESSION['username']=$login;
+         header('Refresh: 3; url=index.php');
 			echo "You are now logged in as " . $login;
 		}
 	}

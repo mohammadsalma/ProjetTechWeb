@@ -1,4 +1,3 @@
-<!-- entete --> 
 <?php include("entete.php"); ?>
 
 <hr>
