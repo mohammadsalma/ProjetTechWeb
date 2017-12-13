@@ -17,10 +17,18 @@
       <fieldset>
         <legend>Identifiez-vous :</legend>
        <p>
+<<<<<<< HEAD
           <label for="username">Username :</label> 
           <input type="text" name="username" id="username" value="username" />
           <label for="password">Password :</label> 
           <input type="password" name="password" id="password" value="password" /> 
+=======
+          <label for="login">Login : </label> 
+          <input type="text" name="login" id="login" value="" />
+          <label for="password">Password : </label> 
+          <input type="password" name="password" id="password" value="" />
+          <br>
+>>>>>>> 701d648150351a748688ab74db23bacebaadb665
           <input type="submit" name="submit" value="Valider" />
         </p>
       </fieldset>
