@@ -2,6 +2,7 @@
 session_start();// Starting Session
 
 // Un commentaire
+// Encore un autre commentaire
 
 include("bdd.php");
 
