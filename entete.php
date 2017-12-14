@@ -1,10 +1,11 @@
 <?php include 'session.php'; ?>
-<!DOCTYPE html>
+
 <html>
 	<head>
 		<meta charset="utf-8"/>
 		<title>Projet 2017 - Techno du Web</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="listedynamique.js"></script>
 	</head>
 
 	<body>
@@ -20,7 +21,7 @@
 			<ul>
 				<li><a href="index.php">Accueil</a></li>
 				<li><a href="listedonnees.php">Consulter</a></li>
-				<li><a href="listedynamique.html">Rechercher</a></li>
+				<li><a href="listedynamique.php">Rechercher</a></li>
 				<li><a href="ajout.php">Ajouter des données</a></li>	
 			</ul>
 			</div>
@@ -31,12 +32,12 @@
 			<div id="co">
 			<form action="Login.php" method="post">
 			<fieldset>
-			<legend>Identifiez-vous :</legend>
+			<legend>Identifiez-vous : </legend>
 			<p>
 				<label for="username">Username : </label> 
-				<input type="text" name="username" id="username" value="test" />
+				<input type="text" name="username" id="username" value="" />
 				<label for="password">Password : </label> 
-				<input type="password" name="password" id="password" value="123" /> 
+				<input type="password" name="password" id="password" value="" /> 
 				<br>
 				<input type="submit" name="submit" value="Valider" />
 			</p>

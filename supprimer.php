@@ -1,9 +1,11 @@
 <?php
 include ("bdd.php");
+
 try {
     $bdd = connexionbd();
     // Connexion à la base de données (pensez à changer vos identifiants)
 }
+
 catch (Exception $e) {
 	// Entête HTTP pour spécifier le code de retour. 500 signifie "erreur interne du serveur"
 	http_response_code(500);
@@ -12,17 +14,18 @@ catch (Exception $e) {
 	// Et on sort du programme, car on est dans un cas d'erreur
 	exit;
 }
+
 // ajouter loged in
 $base= connexionbd();
+
 // TOUJOURS utiliser cette commande quand tu récupères des variables dont on n'est pas sur de la provenance sinon on peut te faire une injection SQL
 $id = $_POST["id"];
+
 // Execution de la requête
 $req= "DELETE FROM releves WHERE id ='".$id."'";
-//echo $req;
+
 $requete=requete($base,$req);
 
-
-
-header('Refresh: 2; url=listedynamique.html');
+header('Refresh: 2; url=listedynamique.php');
 echo 'Données supprimées avec succès !';
 ?>

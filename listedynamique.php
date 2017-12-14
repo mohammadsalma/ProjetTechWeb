@@ -1,30 +1,34 @@
-<?php   
-include "bdd.php";
-// inclusion du fichier a lire
+<?php include("entete.php"); ?>
+<!-- entete -->
 
-header('Content-Type: application/json');
+<!-- restriction d'acces-->
+        <?php
+            if($logged_in) {
+        ?> 
 
-function getList(){
-   $mot = $_REQUEST['motcle'];
-   $base= connexionbd();
-   // me permet de me connecter a la base de donnée car ele contient toutes les informations
-   $req= "Select * from releves where lieu like '".$mot."%' 
-                                      OR prenom_collecteur like '".$mot."%'
-                                       OR nom_collecteur like '".$mot."%'
-                                       OR latitude like '".$mot."%'
-                                       OR date_releve like '".$mot."%'
-                                       OR nom_plante like '".$mot."%'
-                                       OR commentaire like '".$mot."%'
-                                       ";
-   //echo $req;                      
-   $requete=requete($base,$req);
-   return $requete;
-}
+    <div id="main">
+      
+      <form id="liste-form">
+        <div class="form-group" id="recherche">
+          <br><label for="motcle">Recherche : </label>
+          <input type="text" class="form-control" id="motcle" name="motcle">
+        <button type="submit" class="btn btn-primary" id="rechercher">Rechercher</button>
+        </div>
+      </form>
+      <br>
+      <div id="lines">
+      <!-- ici resultats de la recherche-->
+      </div> 
+      <br>
+    </div>
 
-$list_data = getList();
-// Entête HTTP pour spécifier le code de retour. 200 signifie "tout va bien" (c'est le code par défaut)
-http_response_code(200);
+<!-- redirection si non loggue-->
+        <?php
+            } else {
+            header('Refresh: 2; url=index.php');
+            echo '<div id=acces>Accès non autorisé, veuillez-vous connecter svp !</div>';
+            }
+        ?>
 
-echo json_encode($list_data);
-
-?>
+<!-- pied de page -->
+<?php include("pied.php"); ?>

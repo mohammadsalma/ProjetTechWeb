@@ -38,6 +38,6 @@ function addList(){
 addList();
 //appel fonction
 
-header('Refresh: 2; url=listedynamique.html');
+header('Refresh: 2; url=listedynamique.php');
 echo 'Données envoyées avec succès !';
 ?>

@@ -10,24 +10,6 @@
       Connectez-vous pour ajouter ou supprimer vos relevés !</p>
   </div>
   <br>
-
-  <!--<div id="co">
-        <form action="Login.php" method="post">
-      <fieldset>
-        <legend>Identifiez-vous :</legend>
-       <p>
-          <label for="username">Username : </label> 
-          <input type="text" name="username" id="username" value="username" />
-          <label for="password">Password : </label> 
-          <input type="password" name="password" id="password" value="password" /> 
-          <br>
-          <input type="submit" name="submit" value="Valider" />
-        </p>
-      </fieldset>
-    </form>
-  </div>-->
-  <br>
-  <br>
   
 <!-- pied de page -->
 <?php include("pied.php"); ?>

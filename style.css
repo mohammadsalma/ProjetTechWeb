@@ -85,6 +85,7 @@ div#recherche {
 	border:1px solid black;
 }
 
+/*contraindre les images dans bd pr homogeneisation*/
 #td_img img {
 	max-width: 300px;
 }
@@ -96,4 +97,65 @@ div#ajoutsuppr {
 
 button#soumettre {
 	font-weight: bold;
+}
+
+div#acces {
+	font-weight: bold;
+	margin:100 100 100 100;
+}
+
+/*media query pour smartphone*/
+@media screen and (max-device-width: 640px) {
+	body {
+		margin-left:-20%;
+	}
+	nav#menu {
+		margin-left: 20px;
+		font-size: 11px;
+	}
+	div#menu {
+		width:10px;
+		display: block;
+	}
+	div#bienvenue{
+		color: #437d1c;
+		text-align: center;
+	}
+	#bienvenue h1 {
+		font-size: 13px;
+	}
+	#bienvenue p {
+		width: 70%;
+		margin-left: 90px;
+		font-size: 12px;
+	}
+
+	div#co {
+		font-size: 11px;
+		margin-left: 35%;
+	}
+	div#ajoutsuppr {
+		font-size: 11px;
+	}
+	div#recherche {
+		font-size: 11px;
+	}
+	footer#pied-de-page {
+		margin-left:20%;
+		font-size: 11px;
+	}
+	#hautdepage {
+		display :none;
+	}
+	.hidden {
+		display:none;
+	}
+	.tabledonnees td, th {
+		padding:none;
+		width: :50px;
+		font-size:11px;
+	}
+	#td_img img {
+		max-width: 150px;
+	}
 }
